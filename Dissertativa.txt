@@ -1,0 +1,28 @@
+Pessoa:
+	nome:string
+	lista de livros: Livro[]
+
+Emprestimo:
+	data de retirada: Date
+	data de devolução:Date
+	livro:Livro
+	usuario: Usuario
+Usuario:
+	idade: int
+	historico de emprestimos: Emprestimo[]
+Livro:
+	titulo: string
+	autor: Autor
+	genero: string
+Autor:
+	Nacionalidade: string
+
+Relações
+
+1 autor é 1 pessoa
+1 usuario é 1 pessoa
+1 livro possui 1 Autor principal
+cada Autor pode escrever N livros
+cada livro pode ser emprestado N vezes mas só 1 emprestimo de cada vez
+cada Usuaurio pode realizar n emprestimos por vez
+cada emprestimo envolve pelo menos 1 livro e apenas 1 usuario
