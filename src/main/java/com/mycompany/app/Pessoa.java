@@ -11,13 +11,19 @@ public class Pessoa{
     this.livros = livros;
 
     }
+
+    public Livro[] getLivros(){
+        return this.livros;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     
     public String getNome() {
         return this.nome;
     }
     
-    public Livro[] getLivros(){
-        return this.livros;
-    }
+    
 
 }
